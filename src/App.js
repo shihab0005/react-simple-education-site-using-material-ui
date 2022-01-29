@@ -23,23 +23,23 @@ function App() {
           <Route exact path='/'>
             <Home></Home>
           </Route>
-          <Route path='/home'>
+          <Route exact path='/home'>
             <Home></Home>
           </Route>
-          <Route path='/about'>
+          <Route exact path='/about'>
             <About></About>
           </Route>
-          <Route path='/courses'>
+          <Route exact path='/courses'>
             <Courses></Courses>
           </Route>
-          <Route path='/course/:courseId'>
+          <Route exact path='/course/:courseId'>
             <CourseDetails></CourseDetails>
           </Route>
-          <Route path='/instructor'>
+          <Route exact path='/instructor'>
             <Instractor></Instractor>
           </Route>
 
-          <Route path='/contact'>
+          <Route exact path='/contact'>
             <Contact></Contact>
           </Route>
           <Route path='/*'>

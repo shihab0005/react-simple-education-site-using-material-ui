@@ -24,7 +24,6 @@ const Header = () => {
                 <NavLink className='nav_link1' to='/about'>About</NavLink>
                 <NavLink className='nav_link1' to='/courses'>Course</NavLink>
                 <NavLink className='nav_link1' to='/instructor'>Instructor</NavLink>
-
                 <NavLink className='nav_link1' to='/contact'>Contact</NavLink>
 
             </Box>
