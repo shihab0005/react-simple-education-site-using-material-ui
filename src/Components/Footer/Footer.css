@@ -1,0 +1,15 @@
+.footer_container{
+    background-color: #c7c7fa;
+    display:flex;
+    justify-content:space-around;
+                align-items: center;
+    
+    
+}
+
+.nav_link2{
+text-decoration: none;
+margin-bottom: 3px;
+color: black;
+
+}

@@ -1,0 +1,13 @@
+.input_Container{
+    
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+}
+.input_Container .input_field{
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
