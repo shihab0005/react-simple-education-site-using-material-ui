@@ -1,15 +1,16 @@
+
 .home_container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(247, 245, 243);
+    background-color: rgb(253, 234, 215);
     
     
 }
 
 .image img{
-    width: 100%;
-    height:80vh;
+    width: 90%;
+    height:70vh;
     border-radius: 0px 30px;
     margin:30px 10px;
     

@@ -5,9 +5,11 @@ import AddIcon from '@mui/icons-material/Add';
 import './Home.css'
 import About from '../About/About';
 import Courses from '../Courses/Courses';
+import Contact from '../Contact/Contact';
+import { NavLink } from 'react-router-dom';
 const Home = () => {
     return (
-        <>
+        <div className='main_container'>
             <div className='home_container'>
                 <div className='image'>
                     <img src={image2} alt="" />
@@ -18,12 +20,16 @@ const Home = () => {
                     <small> Voluptatibus voluptas nemo excepturi vero harum quidem.<br />
                         Incidunt ipsam ullam fuga odio molestiae.</small>
                     <br /><br />
-                    <Button variant="contained"><AddIcon /> Enroll Now</Button>
+                    <NavLink to='/enrollCourse'>
+                        <Button variant="contained"><AddIcon /> Enroll Now</Button>
+                    </NavLink>
+
                 </div>
             </div >
             <About></About>
             <Courses></Courses>
-        </>
+            <Contact></Contact>
+        </div>
 
     );
 

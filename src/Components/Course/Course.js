@@ -1,4 +1,4 @@
-import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
+import { Button, Card, CardActions, CardContent, CardMedia, Rating, Typography } from '@mui/material';
 import React from 'react';
 import './Course.css'
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
@@ -6,7 +6,7 @@ import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import { NavLink } from 'react-router-dom';
 
 const Course = (props) => {
-    const { id, name, instructor, image, price, discount, SeatAvailable, rating } = props.course;
+    const { id, name, image, rating } = props.course;
     const url = `/course/${id}`;
     return (
         <div className='course_container'>
@@ -25,24 +25,23 @@ const Course = (props) => {
                         Lizards are a widespread group of squamate reptiles, with over 6,000
                         species, ranging across all continents except Antarctica
                     </Typography>
+                    <Rating name="read-only" value={rating} readOnly />
                 </CardContent>
                 <CardActions>
-                    <Button
-                        sx={{
-                            marginRight: '100px',
-                        }}
-                        variant="outlined"
-                        size="small"
+                    <NavLink to='/enrollCourse'>
+                        <Button
+                            sx={{
+                                marginRight: '100px',
+                            }}
+                            variant="outlined"
+                            size="small"
 
-                    ><LocalGroceryStoreIcon />
-                        Enroll</Button>
+                        >
+                            <LocalGroceryStoreIcon />
+                            Enroll</Button>
 
-                    {/* <Button
-                        variant="outlined"
-                        size="small"
-                    >Details
-                        <MoreHorizIcon />
-                    </Button> */}
+                    </NavLink>
+
                     <NavLink to={url}>
                         Course Details
                     </NavLink>

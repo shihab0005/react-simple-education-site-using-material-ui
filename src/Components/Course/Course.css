@@ -1,5 +1,11 @@
 .course_container{
     margin: 20px; 
     display: inline-block;
+    padding: 20px;
+    border: 2px solid rgb(180, 180, 178);
+    background-color: rgb(228, 255, 236);
+  
+
+
    
 }

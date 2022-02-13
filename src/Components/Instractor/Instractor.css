@@ -1,0 +1,22 @@
+.main_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 220, 220);
+}
+
+
+.instructor_card{
+   
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+        
+        margin: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: rgb(185, 183, 183);
+       
+        
+    
+}

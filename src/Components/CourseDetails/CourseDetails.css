@@ -1,0 +1,11 @@
+.details_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(185, 158, 124);
+}
+.card_details{
+   color: aqua;
+   padding: 10px;
+   
+}

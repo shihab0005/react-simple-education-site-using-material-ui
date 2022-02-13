@@ -1,0 +1,16 @@
+.login_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background: rgb(221, 221, 221);
+  
+}
+.login_form{
+    border: 5px solid rgb(107, 106, 106);
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(175, 205, 212);
+    border-radius: 5px;
+}
